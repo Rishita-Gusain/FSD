@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<title>Stone paper scissors</title>
+<link rel="stylesheet" href="style.css">
+<body onload="newGame()">
+    
+    <div class="container">
+        <div class="top_info">
+            <h1>Rock Paper Scissors</h1>
+            <p>Player<span id="playerScore"></span></p>
+            <p>Computer <span id="computerScore"></span></p>
+            <button onclick="newGame()">Chance</button>
+            
+        </div>
+        
+        <div class="game_container">
+            <div id="stone" class="" onclick="pickOption(1)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbfqswvfnF4LKEG0K_-ZsdVVmkk9f6giIWhOedQ9jpYUD4jQBvnyZlC2ryil0jOVqfrnA&usqp=CAU">
+                <span>Rock</span>
+            </div>
+            <div id="paper" class="" onclick="pickOption(2)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUYueBFYfp25NEF40TqjrJKcypPmW25Wv_HaEs6hXD9BkL7kW3SXKftwH872sZ0W4lb80&usqp=CAU">
+                <span>Paper</span>
+            </div>
+            <div id="scissors" class="" onclick="pickOption(3)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBQ-TXVKFgELaggvWGTxMRhDwg43tARtFl0kxlOB99IDaV1FVgiUONIqspy0-tkuVQz6g&usqp=CAU">
+                <span>Scissors</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
